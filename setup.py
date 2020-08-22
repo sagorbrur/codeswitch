@@ -7,7 +7,7 @@ setuptools.setup(
     version="1.0",
     author="Sagor Sarker",
     author_email="sagorhem3532@gmail.com",
-    description="Code Switch is a NLP tool used for language identification, pos tagging, name entity recognition, sentiment analysis of code mixed data.",
+    description="Code Switch is a NLP tool can use for language identification, pos tagging, name entity recognition, sentiment analysis of code mixed data.",
     long_description=codecs.open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/sagorbrur/codeswitch",
