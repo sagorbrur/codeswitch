@@ -1,4 +1,7 @@
 # Code Switch
+[![Documentation Status](https://readthedocs.org/projects/codeswitch/badge/?version=latest)](https://codeswitch.readthedocs.io/en/latest/?badge=latest)
+[![PyPI Version](https://img.shields.io/pypi/v/codeswitch)](https://pypi.org/project/codeswitch/)
+
 **CodeSwitch** is a NLP tool, can use for language identification, pos tagging, name entity recognition, sentiment analysis of code mixed data.
 
 ## Supported Code-Mixed Language
