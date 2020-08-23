@@ -20,6 +20,10 @@ pip install codeswitch
 ## Dependency
 * pytorch >=1.6.0
 
+## Training Details
+* All three sequence tagging model was trainend with huggingface [token classification](https://github.com/huggingface/transformers/tree/master/examples/token-classification)
+* You can find every model and evaluation results [here](https://huggingface.co/sagorsarker)
+
 ## Features & Supported Language
 * Language Identification
   - spanish-english
