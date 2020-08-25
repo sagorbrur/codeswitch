@@ -1,4 +1,4 @@
-from transformers import pipeline, AutoModelForTokenClassification, AutoTokenizer
+from transformers import pipeline, AutoModelForTokenClassification, AutoTokenizer, AutoModelForSequenceClassification
 
 class LanguageIdentification(object):
     def __init__(self, language):
@@ -72,6 +72,20 @@ class NER(object):
         pos_model = pipeline('ner', model=self.model, tokenizer=self.tokenizer)
         results = pos_model(text)
         return results
+
+
+class SentimentAnalysis(object):
+    def __init__(self, language):
+        if language == "spa-eng":
+            self.tokenizer = AutoTokenizer.from_pretrained("sagorsarker/codeswitch-spaeng-sentiment-analysis-lince")
+            self.model = AutoModelForSequenceClassification.from_pretrained("sagorsarker/codeswitch-spaeng-sentiment-analysis-lince")
+        else:
+            raise Exception("No such language found! Try with spa-eng with inverted comman like 'spa-eng' ")
+    def analyze(self, sentence):
+        sa = pipeline('sentiment-analysis', model=self.model, tokenizer=self.tokenizer)
+        result = sa(sentence)
+        return result
+
 
 
 

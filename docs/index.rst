@@ -23,7 +23,7 @@ Language Code
 * ``nep-eng`` for nepali-english
 
 Installation
-------------
+============
 
 .. code-block::
 
@@ -36,7 +36,7 @@ Dependency
 * pytorch >=1.6.0
 
 Features & Supported Language
------------------------------
+=============================
 
 
 * Language Identification
@@ -54,9 +54,13 @@ Features & Supported Language
 
   * spanish-english
   * hindi-english
+  
+* Sentiment Analysis
+
+  * spanish-english
 
 Language Identification
------------------------
+=======================
 
 .. code-block:: py
 
@@ -69,7 +73,7 @@ Language Identification
    print(result)
 
 POS Tagging
------------
+===========
 
 .. code-block:: py
 
@@ -81,7 +85,7 @@ POS Tagging
    print(result)
 
 NER Tagging
------------
+===========
 
 .. code-block:: py
 
@@ -92,8 +96,20 @@ NER Tagging
    result = ner.tag(text)
    print(result)
 
+
+Sentiment Analysis
+==================
+
+.. code-block:: py
+
+   from codeswitch.codeswitch import SentimentAnalysis
+   sa = SentimentAnalysis('spa-eng')
+   sentence = "" # your mixed sentence 
+   result = sa.analyze(sentence)
+   print(result)
+
 Acknowledgement
----------------
+===============
 
 
 * `LinCE <https://ritual.uh.edu/lince/home>`_

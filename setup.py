@@ -4,7 +4,7 @@ import setuptools
 
 setuptools.setup(
     name="codeswitch",
-    version="1.0",
+    version="1.1",
     author="Sagor Sarker",
     author_email="sagorhem3532@gmail.com",
     description="Code Switch is a NLP tool can use for language identification, pos tagging, name entity recognition, sentiment analysis of code mixed data.",

@@ -24,7 +24,8 @@ pip install codeswitch
 * pytorch >=1.6.0
 
 ## Training Details
-* All three sequence tagging model was trainend with huggingface [token classification](https://github.com/huggingface/transformers/tree/master/examples/token-classification)
+* All three(lid, ner, pos) sequence tagging model was trainend with huggingface [token classification](https://github.com/huggingface/transformers/tree/master/examples/token-classification)
+* Sentiment Analysis Model trained with huggingface [text classification](https://github.com/huggingface/transformers/tree/master/examples/text-classification)
 * You can find every model and evaluation results [here](https://huggingface.co/sagorsarker)
 
 ## Features & Supported Language
@@ -38,6 +39,8 @@ pip install codeswitch
 * NER
   - spanish-english
   - hindi-english
+* Sentiment Analysis
+  - spanish-english
 
 ## Language Identification
 
@@ -71,6 +74,19 @@ ner = NER('spa-eng')
 text = "" # your mixed sentence 
 result = ner.tag(text)
 print(result)
+
+```
+
+## Sentiment Analysis
+
+```py
+from codeswitch.codeswitch import SentimentAnalysis
+sa = SentimentAnalysis('spa-eng')
+sentence = "El perro le ladraba a La Gatita .. .. lol #teamlagatita en las playas de Key Biscayne este Memorial day"
+result = sa.analyze(sentence)
+print(result)
+# [{'label': 'LABEL_1', 'score': 0.9587041735649109}]
+
 
 ```
 
