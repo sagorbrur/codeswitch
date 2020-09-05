@@ -3,7 +3,7 @@
 [![PyPI Version](https://img.shields.io/pypi/v/codeswitch)](https://pypi.org/project/codeswitch/)
 [![Colab Notebook](https://img.shields.io/badge/notebook-colab%20notebook-orange)](https://github.com/sagorbrur/codeswitch/blob/master/notebook/codeswitch.ipynb)
 
-**CodeSwitch** is a NLP tool, can use for language identification, pos tagging, name entity recognition, sentiment analysis of code mixed data.
+**CodeSwitch** is an NLP tool, can use for language identification, pos tagging, name entity recognition, sentiment analysis of code mixed data.
 
 ## Supported Code-Mixed Language
 We used [LinCE](https://ritual.uh.edu/lince/home) dataset for training **multilingual BERT** model using huggingface [transformers](https://github.com/huggingface/transformers). `LinCE` has four language mixed data. We took three of it `spanish-english`, `hindi-english` and `nepali-english`. Hope we will train and add other language and task too.
