@@ -2,6 +2,7 @@
 [![Documentation Status](https://readthedocs.org/projects/codeswitch/badge/?version=latest)](https://codeswitch.readthedocs.io/en/latest/?badge=latest)
 [![PyPI Version](https://img.shields.io/pypi/v/codeswitch)](https://pypi.org/project/codeswitch/)
 [![Colab Notebook](https://img.shields.io/badge/notebook-colab%20notebook-orange)](https://github.com/sagorbrur/codeswitch/blob/master/notebook/codeswitch.ipynb)
+[![Downloads](https://pepy.tech/badge/codeswitch)](https://pepy.tech/project/codeswitch)
 
 **CodeSwitch** is an NLP tool, can use for language identification, pos tagging, name entity recognition, sentiment analysis of code mixed data.
 
